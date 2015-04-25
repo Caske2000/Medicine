@@ -1,0 +1,6 @@
+{
+    "parent":"medcraft:item/medItem_item",
+    "textures": {
+        "layer0":"medcraft:items/painKiller_item"
+    }
+}
