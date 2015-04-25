@@ -1,6 +1,8 @@
 < en_US.lang - English localization >
 < item.unlocalisedName.name=DisplayName >
+< tile.unlocalisedName.name=DisplayName >
 
 item.painkiller_item.name=Painkiller
+tile.healthBlock_block.name=Health Block
 
 itemGroup.tabMedicine=MedCraft

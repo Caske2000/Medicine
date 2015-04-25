@@ -8,12 +8,13 @@ import com.caske2000.medicine.item.ModItems;
 import com.caske2000.medicine.util.Reference;
 
 public class ItemRenderRegister {
-	
+
 	public static void registerItemRenderer() {
 		register(ModItems.painkiller);
-    }
-	
+	}
+
 	public static void register(Item item) {
-	    Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+				.register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
 	}
 }
