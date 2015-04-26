@@ -13,27 +13,27 @@ import com.caske2000.medicine.util.Reference;
 
 @Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.VERSION)
 public class Main {
-	        
-	    @Instance
-	    public static Main instance = new Main();
-	    
-	    @SidedProxy(clientSide="com.caske2000.medicine.proxy.ClientProxy", serverSide="com.caske2000.medicine.proxy.ServerProxy")
-	    public static CommonProxy proxy;
-	    
-	    public static final MedicineTab tabMedicine = new MedicineTab("tabMedicine");
-	     
-	    @EventHandler
-	    public void preInit(FMLPreInitializationEvent e) {
-	    	proxy.preInit(e);
-	    }
-	        
-	    @EventHandler
-	    public void init(FMLInitializationEvent e) {
-	    	proxy.init(e);	
-	    }
-	        
-	    @EventHandler
-	    public void postInit(FMLPostInitializationEvent e) {
-	    	proxy.postInit(e);
-	    }
+
+	@Instance
+	public static Main instance = new Main();
+
+	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
+	public static CommonProxy proxy;
+
+	public static final MedicineTab tabMedicine = new MedicineTab("tabMedicine");
+
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent e) {
+		proxy.preInit(e);
+	}
+
+	@EventHandler
+	public void init(FMLInitializationEvent e) {
+		proxy.init(e);
+	}
+
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent e) {
+		proxy.postInit(e);
+	}
 }

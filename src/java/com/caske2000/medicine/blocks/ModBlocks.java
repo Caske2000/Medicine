@@ -1,6 +1,5 @@
 package com.caske2000.medicine.blocks;
 
-
 public class ModBlocks {
 
 	// Blocks
